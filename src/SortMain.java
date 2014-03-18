@@ -2,11 +2,11 @@
 public class SortMain {
 
 	public static void main(String[] args) {
-		int data[] = {4,3,6};
+		int data[] = {4,3,6}; //example data
 		
-		SortCall sortPlay = null;
+		ISort iSort = null;
 		try {
-			sortPlay = (SortCall) Class.forName(ReadXml.className()).newInstance();
+			iSort = (ISort) Class.forName(ReadXml.className()).newInstance();
 		} catch (InstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -18,6 +18,6 @@ public class SortMain {
 			e.printStackTrace();
 		}
 
-		sortPlay.sorting(data);
+		iSort.sorting(data);
 	}
 }

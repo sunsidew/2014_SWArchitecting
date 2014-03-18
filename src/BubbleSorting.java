@@ -1,7 +1,7 @@
 import sorts.Sort;
 
 
-public class BubbleSorting implements SortCall {
+public class BubbleSorting implements ISort {
 
 	@Override
 	public int[] sorting(int[] data) {
